@@ -1,6 +1,6 @@
 # Gallery
 
-**WARNING: This gallery is almost 10 years old now and, AFAIK, is unsupported. This is here only for historic purposes. Please consider using something else unless you want to spend sometime refactoring and improving code.**
+> **_WARNING: This gallery is almost 10 years old now and, AFAIK, is unsupported. This is here only for historic purposes. Please consider using something else unless you want to spend sometime refactoring and improving code._**
 
 This was a gallery written in PHP and developed by *Joonas Viljanen*, hence the original name *JV2Gallery*.
 For a project of mine, I added support for HTML5 <video> and <audio> tags, using custom players Projekktor and jPlayer. It's really easy to use and doesn't need any database.
