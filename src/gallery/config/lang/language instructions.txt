@@ -1,0 +1,97 @@
+------------------
+* MULTI LANGUAGE *
+
+The Gallery supports multiple languages.
+
+You can define new languages here, by translating the content in "english.php" and renaming it to the name of the language.
+
+That name will then appear in the dropdown menu if you are using that.
+See example theme for dropdown... or use this line in your template.php of the theme you are using
+<?php echo language_select(); ?>
+
+This will then print out a dropdown selection box for available languages.
+
+The settings defined in these lang files obviously only affect the "labels" and links in the gallery.
+
+If you are using a language with non western characters (e.g. russian - cyrillic), I recommend you set the default language to english and do all the folder and image names in english. This way the URls will work nicely. Especially since IE seems to screw up with creating links out of these types of file names.
+Then to get your language of choice working, follow instructions below, to set the folder and image names for display on page in your language.
+Then set $_SESSION['language']="russian";
+below the config section in "gallery.php" where the language is set.
+
+------------------
+* FOLDER NAMES *
+
+You can have the folder names in multiple languages.
+To do this... keep the names of the folders in the default language defined in setup.
+Then, to add new names for folders in other languages:
+
+Create a txt file inside the folder and name it with the language,
+For example for finnish... i.e. "suomi"... I have a lang file suomi.php in the lang dir.
+To tie in with this language, I would create a file "suomi.txt" inside the folder I want to rename.
+Inside this txt file, type the name of the folder it is placed in, in the language you want.
+Then when the language is selected, the folder name is displayed with that language.
+This affects both the menu and the name below the folder.
+It does not affect the URL.
+
+
+------------------
+* IMAGE NAMES *
+
+You can have the image names in multiple languages.
+To do this... keep the names of the images in the default language defined in setup.
+Then, to add new names for images in other languages:
+
+Create a txt file inside the folder and name it like this:
+[imagename]_name_[language].txt
+For example for finnish... i.e. "suomi"... and a image called "my_photo.jpg" I would create a text file called "my_photo_name_suomi.txt"
+Inside this txt file, type the name of the image in the language you want.
+Then when the language is selected, the image name is displayed with that language.
+This will only affect the name below the image (if you have the option to display it turned on).
+It does not affect the URL.
+
+
+------------------
+* DESCRIPTIONS *
+
+Images:
+Description or comments file for each image can be done in several languages also.
+Create your normal comments file for the default language like this:
+[imagename].txt
+To create additional comments in other languages:
+[imagename]_[language].txt
+
+e.g. from the example used above:
+english ->    my_photo.txt
+finnish ->    my_photo_suomi.txt
+
+Folders:
+Description or comments file for each folder can be done in several languages also.
+Create your normal comments file for the default language like this:
+"folder.txt"
+To create additional comments in other languages:
+folder_[language].txt
+
+e.g. for folder "Photos" put these files inside:
+english ->    folder.txt
+finnish ->    folder_suomi.txt
+
+
+------------------
+* INCLUDING IN YOUR MULTI LANG SITE*
+
+To use this in your existing site, where you already have language selection for the whole site...
+Include the site normally... according to the instructions elsewhere.
+
+To get the gallery language to work with your language selection... do the following:
+
+assign your languge selection from your site to a variable called:
+$_SESSION['lang']
+
+you must use the same way to name the language in your site and the gallery... so it will recognise the language file wanted and so on... obviously :)
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Projekktor - simply mighty video</title>
+    <style type="text/css">
+	body { background-color: #fdfdfd; padding: 0 20px; color:#000; font: 13px/18px monospace; width: 800px;}
+	a { color: #360; }
+	h3 { padding-top: 20px; }
+    </style>
+
+    <!-- Load player theme -->
+    <link rel="stylesheet" href="theme/style.css" type="text/css" media="screen" />
+
+    <!-- Load jquery -->
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+    <!-- load projekktor -->
+    <script type="text/javascript" src="projekktor.min.js"></script>
+
+</head>
+<body>
+
+    <h1>Thanks for downloading Projekktor <span id="projekktorver"></span></h1>
+    <p>
+	This file is intended to be a quick introduction on how to install and use Projekktor Zwei.
+	Please take a look onto the source of this file in order to check what´s going on here. More detailed information and documentation
+	can be found online:
+    </p>
+
+    <ul>
+	<li><a href="http://www.projekktor.com">Projekktor Homepage</a></li>
+	<li><a href="http://www.projekktor.com/docs.php">Projekktor Docs</a></li>
+	<li><a href="http://www.projekktor.com/board/">Projekktor Discussion & Support Forum</a></li>
+	<li><a href="http://www.projekktor.com/downloads.php">More Downloads</a></li>
+    </ul>
+
+    <h1 style="color: red;">UPGRADE INFORMATION:</h1>
+
+    <p>
+	<h2>from V0.8.10</h2>
+	The playlist format and how media files are assigned via Javascript has been changed to get rid of some breaks in the logic.
+	Please refer <a href="http://www.projekktor.com/docs/playlists">Using Playlists</a> in the docs for more.
+    </p>
+    <p>
+	<h2>from V0.7.x:</h2>
+	Since V0.8.x the whole JS API and configuration mechanics has been redesigned and is NOT completely downward compatible
+       to V0.7.x and below.
+	Same for the configuration and instanciation. Please refer <a href="http://www.projekktor.com/docs/api">Javascript API Functions (
+	and Instantiation)</a> for detailed information.
+    </p>
+
+
+
+    <p>
+	<h1>Licensing</h1>
+	Please check the <a href="http://www.projekktor.com/license.php">Projekktor License</a> section for detailed information
+	about licensing and poject support.
+    </p>
+
+
+    <h3>Example - Single File, Poster, OGG+MP4+WEBM (Theme: Maccaco by <a href="http://www.porkhead.org">porkhead.org</a>)</h3>
+
+    <video id="player_a" class="projekktor" poster="intro.png" title="this is Projekktor" width="640" height="385" controls>
+	<source src="intro.ogv" type="video/ogg" />
+	<source src="intro.mp4" type="video/mp4" />
+	<source src="intro.webm" type="video/mp4" />
+    </video>
+
+
+    <script type="text/javascript">
+	$(document).ready(function() {
+	    projekktor('#player_a'); // instantiation
+	});
+    </script>
+
+
+    <p>
+	brought to you by <a href="http://www.spinningairwhale.com">spinning airwhale media</a> - Free the Princess of Agentia!
+    </p>
+
+</body>
+</html>

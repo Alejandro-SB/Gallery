@@ -1,0 +1,38 @@
+---------------
+About The Icons
+---------------
+
+when you add files other than images into the gallery...
+these icons will be used instead of a thumbnail.
+By default, when file type is not defined in the icons here... it will use the blank "default.gif"
+
+You can add any icons here to display a specific image for the filetype.
+You must name the file according to the file extension.
+for example... avi.gif  mpg.gif  mov.gif  doc.gif  zip.gif
+
+
+If you are creating a new theme, you can override any of the default icons by creating a folder "icons" inside the theme folder... e.g. have a look at my grey and dark themes. Works for both folder image and any file icon.
+However, if you dont have an icon for a filetype in your "themename/icon" but it is found in "DEFAULT_ICONS" then that is used.
+
+The styles for the deafult themes have been condifgured to the icons size 64 x 64 and thumbnail size 140 x 105
+If you want to use different size icons, you will need to edit the CSS styles to align them properly.
+
+The folder.gif folder icon image has to always have the same dimesnsions as the thumbnails.
+
+You can set the folder icon individually for each folder... by dropping a another "folder.gif" inside that folder.
+
+
+---------------------------------------
+
+The default icon set here is by Kearone
+
+You can download the rest from:
+http://www.deviantart.com/deviation/4846702/
+
+
+If you wish to add more icons to the set here... I recommend resizing to 64x64...
+and convert to transparent GIF as the PNG support in IE is a bit dodgy to say the least.
+
+---------------------------------------
+
+

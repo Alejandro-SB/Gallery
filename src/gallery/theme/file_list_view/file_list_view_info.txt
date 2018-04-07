@@ -1,0 +1,11 @@
+this theme demonstrates how to use the file list view...
+
+the folder image icon included with this theme is just resized from the original.
+the rest of the file icons are resized in the html img tag from the original larger default icons.
+
+I fyou want the icons looking sweet... resize them or use new smaller ones, and copy them to the icons folder here.
+I have not done this to keep the download size a bit smaller.
+
+
+
+The settings shown in in the config.php (spcific to file_list_view) can be copied to "galleryconfig.php" inside any image folder to use this view for a specific folder.

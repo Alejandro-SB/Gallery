@@ -1,0 +1,137 @@
+Version 3.1.1
+    *Fixed: Support for Lightbox2
+    *Added: HTML5 audio & video support
+    *Added: Projekktor Zwei HTML5 video player
+    *Added: jPlayer HTML5 audio player
+
+Version 3.1
+    * Patched: Multilanguage Breadcrumbs display
+    * Patched: IIS Request URI Fix now works with multiple galleries and in subfolders
+    * Added: Support for Lighbox2
+    * Changed: Instructions for include mode.
+
+Version 3.0.1 > 3.0.3
+    * Patched: Security updates
+
+Version 3.0
+
+    * Patched: Code is now valid XHTML
+    * Patched: "back to gallery" link now remembers what page you were on.
+    * Patched: Admin upload images in ZIP - enable php_zip module to use.
+    * Patched: Admin renaming of folders and files.
+    * Added: Ability to display any kind of files as icons, and provide download.
+    * Added: New file list view, which displays files kind of like in e.g. windows.
+    * Added: Embedded video for wmp, qt, flv and divx.
+    * Added: Slideshow
+    * Added: Themes
+    * Added: Multilingual support
+    * Added: Individual folder icons using "folder.gif" inside the folder.
+    * Added: Easier file handling config.
+    * Added: Current album/photo name in the page title
+    * Added: More CSS stylable elements
+    * Added: Descriptions for folders.
+    * Added: Javascript onmouseover tooltip for folder descriptions.
+    * Changed: Config files divided between normal and theme config.
+    * Changed: Gallery table spacer row removed - spacing controlled by CSS
+    * Changed: content of config files. now separated to give layout control to themes.
+    * Changed: Include mode now done by selecting "include_mode" theme.
+    * Changed: the way the files to ignore and include in the gallery are listed.
+    * Changed: Cleaned up and improved some of the main code.
+    * Changed: Separated large image view code (and video) to files in include folder.
+
+Version 2.0 - Released 5.7.2006
+
+    * Patched: Security vulnerability in regard to parent folder access.
+    * Added: Option to use friendly URLs using MOD_REWRITE and HTACCESS
+    * Added: Ability to define folder ordernumber separator in setup file.
+    * Added: Option in setup to hide title from page and use only for browser window
+    * Added: Option to display errors in debug mode. default hide all.
+    * Added: Option to align gallery table vertically top or bottom.
+    * Added: Display of image or subfolder count in gallery view
+    * Added: Removal of file extension from breadcrumbs
+    * Added: Save menu to session var to speed up page loading after initial scan.
+    * Changed: Directory structure for includes etc.
+    * Changed: folder image no longer goes through thumb.php - hence transparent gif ok.
+    * Changed: ADMIN area now separated from the gallery
+
+Version 1.2.1 - Released 13.4.2006
+
+    * Added: EXIF info display
+    * Added: automatic copyright text insertion to photo
+    * Added: automatic watermark insertion to photo
+
+Version 1.2 - Released 31.3.2006
+
+    * Added: Ability to recursively go through unlimited levels of subfolders (including breadcrumbs and menu)
+    * Changed: CSS menu changed to a new version with included htc file
+
+Version 1.1.3 - Released 2.1.2006
+
+    * Patched: url behaviour fix
+    * Patched: thumbnail display size correction
+    * Patched: hides javascript for menu when no menu in use
+    * Added: Option to sort images in reverse
+
+
+Version 1.1.2 - Released 28.12.2005
+
+    * Patched: Issue with popupwindows not opening in old popupmode=1
+    * Added: more modes for popups (0=none, 1=popups from large img, 2=only popups)
+    * Added: Desciptions/comments for each image (separate txt file)
+    * Added: admin links to edit text for each image.
+
+
+Version 1.1.1 - Released 23.12.2005
+
+    * Patched: Breadcrumbs and navlinks fix to work with images in root dir. (Thanks to "caadmin")
+
+
+Version 1.1 - Released 22.12.2005
+
+    * In this version, the whole gallery structure has been modified to better suit including within your own website.
+
+
+Version 1.0.7 - Released 20.12.2005
+
+    * Added: Better admin page
+    * Added: Theme selection from admin page - CSS now in one file.
+    * Patched: stripslashes from title.
+
+
+Version 1.0.6 - Released 19.12.2005
+
+    * Patched: url link behaviour when in include mode. The include mode now supports the gallery within a dynamic page which already passes variables to it. To see an example, view include demo... and look at url.
+
+
+Version 1.0.5 - Released 18.12.2005
+
+    * Patched: minor code behaviour mods.
+
+
+Version 1.0.4 - Released 17.12.2005
+
+    * Added: option to restrict large image size and cache it
+    * Patched: fixed a problem in the safemode file handling
+    * Patched: now showing breadcrumbs menu in the include mode
+    * Added: option to hide breadcrumbs menu
+
+
+Version 1.0.3 - Released 16.12.2005
+
+    * Patched: bug in menu creation... gallery now accepts images in gallery root
+    * Added: image caching
+    * Added: image uploading (individual and zip)
+    * Added: File and Folder deletion and creation
+
+
+Version 1.0.2 - Released 15.12.2005
+
+    * Patched: Fixed image aspect ratios in thumbnails
+
+
+Version 1.0.1 - Released 15.12.2005
+
+    * Added chmod functionality with php safe mode work around
+
+
+Version 1.0 - Released  13.12.2005

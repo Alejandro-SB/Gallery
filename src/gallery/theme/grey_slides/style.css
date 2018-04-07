@@ -1,0 +1,379 @@
+/*
+JV2 Folder Gallery Styles
+
+If you change the theme, and would like to share them....
+please contact me through the website.
+You might have your theme included in the next release.
+
+*/
+
+
+
+/* body style - delete this if using as include and conficting with existing css */
+body {
+	margin: 10px;
+	background-color: #696969;
+	background-image: url("img/bg.gif");
+	background-repeat: repeat-y;
+}
+
+/* remove dotted lines from links */
+a:focus {outline: 0px dotted;}
+
+/* Gallery Title */
+.gallerytitle {
+	color: #bababa;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 20pt;
+	font-weight: bold;
+	font-style: italic; 
+	margin-left: 185px;
+}
+
+
+/* Breadcrumbs links */
+.gallerymenu {
+	color: #989898;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	margin-left: 185px;
+}
+.gallerymenu A:link {COLOR: #989898; text-decoration: underline}
+.gallerymenu A:visited {COLOR: #989898; text-decoration: underline}
+.gallerymenu A:active {COLOR: #989898; text-decoration: underline}
+.gallerymenu A:hover {COLOR: #cdcdcd; text-decoration: none}
+
+/* HR below breadcrumbs */
+hr {
+	border:0;
+	color: #000;
+	background-color: #000;
+	height: 1px;
+}
+
+
+/* Image (and folder) Title */
+.imagetitle {
+	color: #000;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px; 
+}
+
+.view_download {
+	color: #000;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px; 
+}
+.view_download A:link {COLOR: #000000; text-decoration: none}
+.view_download A:visited {COLOR: #000000; text-decoration: none}
+.view_download A:active {COLOR: #000000; text-decoration: none}
+.view_download A:hover {COLOR: #000000; text-decoration: underline}
+
+
+.folder_description {
+	color: #000;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px; 
+}
+
+.table_cell_folder {
+	background-color:#cdcdcd;
+	border-top: 1px solid #f7f7f7;
+	border-left: 1px solid #f7f7f7;
+	border-right: 2px solid #323232;
+	border-bottom: 2px solid #323232;
+	margin: 0px 5px;
+	padding: 10px; 
+}
+
+.table_cell_img {
+	background-color:#cdcdcd;
+	border-top: 1px solid #f7f7f7;
+	border-left: 1px solid #f7f7f7;
+	border-right: 2px solid #323232;
+	border-bottom: 2px solid #323232;
+	margin: 0px 5px; 
+	padding: 10px;
+}
+
+.table_cell {
+	padding-bottom: 8px;
+}
+
+.large_img_view {
+	background-color:#cdcdcd;
+	border-top: 1px solid #f7f7f7;
+	border-left: 1px solid #f7f7f7;
+	border-right: 2px solid #323232;
+	border-bottom: 2px solid #323232;
+	padding: 10px;
+}
+
+
+/* FILE LIST VIEW */
+.filetitle {
+	color: #000;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 12px; 
+	font-weight:bold;
+}
+.filelist {
+	color: #989898;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 12px; 
+}
+.filelist A:link {COLOR: #989898; text-decoration: none}
+.filelist A:visited {COLOR: #989898; text-decoration: none}
+.filelist A:active {COLOR: #989898; text-decoration: none}
+.filelist A:hover {COLOR: #989898; text-decoration: underline}
+
+/* Gallery Image thumbnail */
+.galleryimage {
+
+}
+.galleryimage:hover {
+
+}
+
+/* Default Folder Image */
+.galleryfolder {
+
+}
+.galleryfolder:hover {
+
+}
+
+/* Page Links */
+.gallerypagelinks {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+      	color: #989898;
+      	text-align: center;
+      	margin-top:20px;
+}
+
+.gallerypagelinks A:link {COLOR: #989898; text-decoration: underline}
+.gallerypagelinks A:visited {COLOR: #989898; text-decoration: underline}
+.gallerypagelinks A:active {COLOR: #989898; text-decoration: underline}
+.gallerypagelinks A:hover {COLOR: #cdcdcd; text-decoration: none}
+
+.slideshowlink {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+      	color: #000000;
+      	text-align: center;
+      	margin-top:5px;
+}
+
+.slideshowlink A:link {COLOR: #989898; text-decoration: underline}
+.slideshowlink A:visited {COLOR: #989898; text-decoration: underline}
+.slideshowlink A:active {COLOR: #989898; text-decoration: underline}
+.slideshowlink A:hover {COLOR: #cdcdcd; text-decoration: none}
+
+
+/* Links in large img view mode */
+.navlink {
+	color: #989898;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	display:block;
+	padding:3px 6px;
+	margin:0px 12px 0px 0px;
+	border:1px solid #989898;
+	float:left;
+}
+.navlink:link {COLOR: #989898; text-decoration: none}
+.navlink:visited {COLOR: #989898; text-decoration: none}
+.navlink:active {COLOR: #989898; text-decoration: none}
+.navlink:hover {COLOR: #cdcdcd; text-decoration: none}
+
+
+/* Links for admin */
+.galleryadminlinks {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+      text-align: center;
+      border: 1px solid #000000;
+      margin: 15px auto;
+      padding: 15px;
+      width: 250px;
+}
+
+.galleryadminlinks A:link {COLOR: #000000; text-decoration: underline}
+.galleryadminlinks A:visited {COLOR: #000000; text-decoration: underline}
+.galleryadminlinks A:active {COLOR: #000000; text-decoration: underline}
+.galleryadminlinks A:hover {COLOR: #000000; text-decoration: none}
+
+/* powered by */
+.credit {
+	text-align:right;
+	margin-top:20px;
+	margin-bottom:2px;
+	color: #888888;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.credit A:link {COLOR: #888888; text-decoration: underline}
+.credit A:visited {COLOR: #888888; text-decoration: underline}
+.credit A:active {COLOR: #888888; text-decoration: underline}
+.credit A:hover {COLOR: #000000; text-decoration: none}
+
+/* popup tips */
+.tips {
+	font-family: Verdana;
+	font-size: 8pt;
+	display: none;
+	position: absolute;
+	border: 1px solid #000000;
+	background-color: #787878;
+	color: white;
+	width: 200px;
+}
+.tips p
+{
+	padding: 5px;
+	margin: 0px;
+}
+.tips h1
+{
+	font-size: 8pt;
+	color: #000000;
+	background-color: #cccccc;
+	padding: 2px;
+	margin: 0px;
+	margin-bottom: 2px;
+	text-align: center;
+}
+.tips img
+{
+	float: left;
+	margin: 0px;
+	padding: 5px;
+	padding-right: 8px;
+}
+
+
+
+
+.comments {
+  color: #cccccc;
+  font-family: Verdana;
+  font-size: 12px;
+  width:500px;
+  padding-top:5px;
+}
+
+.exif {
+	margin-top:20px;
+	margin-right:20px;
+	color: #333;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+
+
+/*////// GALLERY MENU //////*/
+
+
+#menu{
+z-index:2;
+width:150px;
+padding-bottom:12em; /* To allow room for bottom dropdown */
+padding-right:20px;
+padding-top:3px;
+}
+
+#menu a {
+font:normal 12px verdana,helvetica,sans-serif;
+display:block;
+width:142px;
+border:1px solid #898989;
+margin:0px 0px 2px 0px;
+padding:3px;
+color:#cdcdcd;
+background-color:#696969;
+text-decoration:none;
+}
+
+#menu a:hover{
+color:#000000;
+background-color:#cdcdcd;
+}
+
+#menu ul ul a {
+border:0px;
+margin:0px
+}
+
+#menu a:active{
+color:#888888;
+background-color:#696969;
+}
+
+#menu ul{
+list-style:none;
+margin:0;
+padding:0;
+width:100%;
+}
+
+#menu ul ul {
+border:1px solid #898989;
+}
+
+/* Requirement: Put the element selector name (div)
+onto non anchor hover selectors to force IE5 and
+5.5 to correctly apply the csshover file. */
+
+div#menu li, div#menu li:hover{
+position:relative;
+}
+
+div#menu li ul{
+position:absolute;
+top:0;
+left:100.1%;
+display:none;
+}
+
+div#menu ul ul,
+div#menu ul ul ul,
+div#menu ul ul ul ul,
+div#menu ul ul ul ul ul,
+div#menu ul ul ul ul ul ul,
+div#menu ul li:hover ul ul,
+div#menu ul li:hover ul ul ul,
+div#menu ul li:hover ul ul ul ul,
+div#menu ul li:hover ul ul ul ul ul,
+div#menu ul li:hover ul ul ul ul ul ul
+{display:none;}
+
+div#menu ul li:hover ul,
+div#menu ul ul li:hover ul,
+div#menu ul ul ul li:hover ul,
+div#menu ul ul ul ul li:hover ul,
+div#menu ul ul ul ul ul li:hover ul,
+div#menu ul ul ul ul ul ul li:hover ul
+{display:block;}
+
+/* End non-anchor hover selectors */
+
+/* Styling for Expand */
+
+#menu a.x, #menu a.x:visited{
+background:#eee url(gallery/css/sub.gif) no-repeat bottom right;
+}
+
+#menu a.x:hover{
+color:#ffffff;
+background-color:#696969;
+}
+
+#menu a.x:active{
+color:#ffffff;
+background-color:#696969;
+}
+
+

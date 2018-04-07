@@ -1,0 +1,11 @@
+PHP_FLAG output_buffering On
+php_value memory_limit "64M"
+ReWriteEngine on
+RewriteBase /
+
+ReWriteRule ^gallery/admin/ - [L]
+
+ReWriteRule ^category/(.*)/page/(.*)$ index.php?category=$1&page=$2 [L]
+ReWriteRule ^category/(.*)$ index.php?category=$1 [L]
+ReWriteRule ^image/(.*)$ index.php?image=gallery/images/$1 [L]
+AddType video/webm .webm

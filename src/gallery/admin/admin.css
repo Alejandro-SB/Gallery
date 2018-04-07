@@ -1,0 +1,229 @@
+/*
+JV2 Folder Gallery ADMIN Styles
+
+If you change the theme, and would like to share them....
+please contact me through the website.
+You might have your theme included in the next release.
+
+*/
+
+
+body {
+	margin: 10px;
+	background-color: #d8d8d8;
+	color: #000;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+
+
+#page {
+	width:800px;
+	margin: 0px;
+	background-color: #ffffff;
+	border: 1px solid #444444;
+}
+
+
+#pagecontent {
+	padding:25px;
+	color: #000;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+#header {
+	color: #000;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic; 
+	padding:15px 10px 15px 10px;
+	background-color: #b4b4b4;
+	border-bottom: 1px solid #444444;
+}
+#topmenu {
+	text-align:right;
+	color: #000;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+	padding:5px;
+	margin-bottom:0px;
+	background-color: #828282;
+	border-bottom: 1px solid #444444;
+}
+#topmenu A:link {COLOR: #000000; text-decoration: none; padding:5px;}
+#topmenu A:visited {COLOR: #000000; text-decoration: none; padding:5px;}
+#topmenu A:active {COLOR: #000000; text-decoration: none; padding:5px;}
+#topmenu A:hover {COLOR: #000000; text-decoration: none; padding:5px; background-color:#535353; color: #d9d9d9;}
+
+/* Breadcrumbs links */
+#adminmenu {
+	color: #000;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-bottom:40px;
+	margin:5px;
+}
+#adminmenu A:link {COLOR: #000000; text-decoration: none}
+#adminmenu A:visited {COLOR: #000000; text-decoration: none}
+#adminmenu A:active {COLOR: #000000; text-decoration: none}
+#adminmenu A:hover {COLOR: #555555; text-decoration: none}
+
+
+#menubg {
+	background-color: #b4b4b4;
+	border-right: 1px solid #444444;
+	width:150px;
+}
+
+
+/* Page Links */
+.gallerypagelinks {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+      color: #000000;
+      text-align: center;
+}
+
+.gallerypagelinks A:link {COLOR: #000000; text-decoration: underline}
+.gallerypagelinks A:visited {COLOR: #000000; text-decoration: underline}
+.gallerypagelinks A:active {COLOR: #000000; text-decoration: underline}
+.gallerypagelinks A:hover {COLOR: #555555; text-decoration: none}
+
+/* Links in large img view mode */
+.navlink {
+	color: #000;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	display:block;
+	padding:3px 6px;
+	margin:3px 12px 0px 0px;
+	border:1px solid #000;
+	float:left;
+}
+.navlink:link {COLOR: #000; text-decoration: none}
+.navlink:visited {COLOR: #000; text-decoration: none}
+.navlink:active {COLOR: #000; text-decoration: none}
+.navlink:hover {COLOR: #888; text-decoration: none}
+
+
+/* Links for admin */
+.galleryadminlinks {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+      text-align: center;
+      border: 1px solid #000000;
+      margin: 15px auto;
+      padding: 15px;
+      width: 250px;
+}
+
+.galleryadminlinks A:link {COLOR: #000000; text-decoration: underline}
+.galleryadminlinks A:visited {COLOR: #000000; text-decoration: underline}
+.galleryadminlinks A:active {COLOR: #000000; text-decoration: underline}
+.galleryadminlinks A:hover {COLOR: #000000; text-decoration: none}
+
+/* powered by */
+.credit {
+	width:800px;
+	margin: 0px;
+	text-align:right;
+	margin-top:10px;
+	margin-bottom:20px;
+	color: #000000;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.credit A:link {COLOR: #000000; text-decoration: underline}
+.credit A:visited {COLOR: #000000; text-decoration: underline}
+.credit A:active {COLOR: #000000; text-decoration: underline}
+.credit A:hover {COLOR: #000000; text-decoration: none}
+
+/* popup tips div in setup edit */
+#tips {
+	display: none;
+	position: absolute;
+	border: 1px solid black;
+	background-color: lightblue;
+	width: 200px;
+	padding: 3px 5px;
+}
+
+#login {
+      border: 1px solid #000000;
+      padding:20px;
+      margin:40px auto 80px auto;
+      width:350px;
+}
+
+
+
+table {
+	color: #000;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+table A:link {COLOR: #000000; text-decoration: none}
+table A:visited {COLOR: #000000; text-decoration: none}
+table A:active {COLOR: #000000; text-decoration: none}
+table A:hover {COLOR: #555555; text-decoration: underline}
+
+
+#editlist td {
+border-bottom: 1px solid #dfdfdf;
+}
+
+#editlist a span.img {
+position: absolute;
+left: -1000px;
+}
+
+
+#editlist a:hover span.img {
+visibility: visible;
+top: 0;
+left: 60px;
+}
+   
+
+.td_p {
+	padding-left:20px;
+}
+
+
+.thumbnail{
+position: relative;
+z-index: 0;
+}
+
+.thumbnail:hover{
+background-color: transparent;
+z-index: 50;
+}
+
+.thumbnail span{ /*CSS for enlarged image*/
+position: absolute;
+background-color: #eeeeee;
+padding: 5px;
+left: -1000px;
+border: 1px solid #555555;
+visibility: hidden;
+color: black;
+text-decoration: none;
+}
+
+.thumbnail span img{ /*CSS for enlarged image*/
+border-width: 0;
+padding: 2px;
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image on hover*/
+visibility: visible;
+top: 0;
+left: -120px; /*position where enlarged image should offset horizontally */
+
+}

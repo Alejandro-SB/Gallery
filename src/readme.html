@@ -1,0 +1,743 @@
+<html>
+<head>
+<title>JV2 Folder Gallery Readme</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script type="text/javascript">
+function toggleLayer(whichLayer)
+{
+if (document.getElementById)
+{
+// this is the way the standards work
+var style2 = document.getElementById(whichLayer).style;
+style2.display = style2.display? "":"block";
+}
+else if (document.all)
+{
+// this is the way old msie versions work
+var style2 = document.all[whichLayer].style;
+style2.display = style2.display? "":"block";
+}
+else if (document.layers)
+{
+// this is the way nn4 works
+var style2 = document.layers[whichLayer].style;
+style2.display = style2.display? "":"block";
+}
+}
+</script>
+
+<style>
+
+body {
+font-family: helvetica, arial, verdana;
+font-size: 14px;
+}
+
+#page {
+margin: 0px 40px 30px 40px;
+padding: 15px;
+background-color:#eeeeee;
+border:1px solid #cccccc;
+}
+
+#maintitle {
+margin: 15px 40px 0px 40px;
+color:#aaaaaa;
+font-family: Roman, "Times New Roman", serif;
+font-size: 50px;
+font-weight: bold;
+font-style:italic;
+padding-left: 15px;
+background-color:#dddddd;
+border:1px solid #aaaaaa;
+}
+
+
+.copyright {
+font-family: Roman, "Times New Roman", serif;
+font-size: 12px;
+text-align:right;
+}
+
+.version {
+font-size: 18px;
+font-weight: bold;
+font-style:italic;
+}
+
+.hidden_info
+{
+border:1px dotted #aaaaaa;
+background-color:#fafafa;
+margin: 5px 20px 5px 20px;
+padding: 10px;
+display: none;
+}
+
+
+A:link {COLOR: #000000; font-style:italic; text-decoration: underline}
+A:visited {COLOR: #000000; font-style:italic; text-decoration: underline}
+A:active {COLOR: #000000; font-style:italic; text-decoration: underline}
+A:hover {COLOR: #000000; font-style:italic; text-decoration: none}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+<div id="maintitle">JV2 Folder Gallery</div>
+<div id = "page">
+
+
+<div class="copyright">
+Copyright <a target="_blank" href="http://foldergallery.jv2.net/Contact/">Joonas Viljanen</a> 2006 -
+<a target="_blank" href="http://foldergallery.jv2.net">http://foldergallery.jv2.net</a><br>
+</div>
+
+
+<br>
+
+<p><b>
+Welcome to the JV2 Folder Gallery...
+</b></p>
+
+
+<p>
+To get started using the gallery...<br>
+-------> <i>REMEMBER to set the <b>write permissions</b> for THUMBCACHE !!!!</i><br>
+AND change <b>admin</b> username/<b>password</b> !!! <br>
+-> (set in "config/gallerysetup.php" or log in with current "admin"/"password" and change )<br>
+</p>
+
+<p>
+For additional info on how to get started (and more help):
+<a target="_blank" href="http://foldergallery.jv2.net/forum/viewtopic.php?id=1">go to the forum</a>
+</p>
+
+<p>
+To see some of the stuff the gallery can be configured to do, visit:
+<a target="_blank" href="http://demo.jv2.net/">http://demo.jv2.net</a>
+</p>
+
+
+<p>
+<b>FREE for Personal use</b> - Please <a target="_blank" href="http://foldergallery.jv2.net/Donate/">Donate</a><br>
+For commercial websites, get a <a target="_blank" href="http://foldergallery.jv2.net/Commercial_Licence/">Commercial License</a>
+</p>
+
+
+<p class="version">
+Version 3.0
+</p>
+
+<p>
+Directory structure and the content of MOST files changed since 2.x and 1.x!<br>
+<a href="javascript:toggleLayer('structure');">
+Click here to see the Structure:
+</a>
+</p>
+<div id="structure" class="hidden_info">
+<pre>
+root/index.php
+root/gallery/
+root/gallery/images/     *place your image folders here*
+root/gallery/config/     *default config options*
+root/gallery/themes/     *themes for gallery*
+root/gallery/thumbcache/ *folder to store thumbnails - give write permission*
+root/gallery/include/    *all includes*
+root/gallery/admin/      *all admin files*
+</pre>
+<br>
+<br>
+<div align="center"><a href="javascript:toggleLayer('structure');">HIDE</a></div>
+</div>
+
+
+<p>
+Admin area has been separated from the gallery. REMEMBER to set the username and password in your setup.<br>
+You can also delete the ADMIN folder if you have no use for it.
+</p>
+
+<p>
+You can select the <b>theme</b> of the gallery by copying the foldername of the theme to the "$gallerytheme" setting in "config/gallerysetup.php", or by using the admin section dropdown menu.<br>
+<a href="javascript:toggleLayer('theme');">
+More about themes... >>
+</a>
+</p>
+<div id="theme" class="hidden_info">
+The themes include a template ("template.php"), which defines the layout of the pages.<br>
+Styling of the theme is always contained in the theme folder in the stylesheet ("style.css").<br>
+The theme has it's own config file ("config.php"), which defines options relevant to layout.<br>
+The theme may also have a folder "/ICONS/" - Anything in here will override the default icons set in the gallery.<br>
+The gallery includes a wide variety of layout themes, just try them out...<br><br>
+For example, if you want to have a language select dropdown option choose "multi_language" or have a look at the template for the theme and copy the code for language select into what you are using...<br>
+Themes here do not have a wide colour choice; they are mainly for demonstrating options and layouts.<br><br>
+You can easily create a new theme and use it. If you'd like to share it with others, <a target="_blank" href="http://foldergallery.jv2.net/forum/">go to the forum</a>.
+<br>
+<br>
+If the theme you are changing to, has different image sizes in config compared to the theme you were using, you should empty your cache.<br>
+You can just delete all files in "thumbcache"... or in admin, empty and regenerate the cache all at once.
+<br>
+<br>
+<div align="center"><a href="javascript:toggleLayer('theme');">HIDE</a></div>
+</div>
+
+
+
+
+<p>
+<b>LIGHTBOX 2</b><br>
+The latest gallery includes out of the box support for LIGHTBOX 2  <br>
+<a href="javascript:toggleLayer('LIGHTBOX');">
+More info >>
+</a>
+</p>
+<div id="LIGHTBOX" class="hidden_info">
+This can be turned on by setting $popupimage="7" in your theme config.  <br>
+  <br>
+To use this option... you must download the package from  <br>
+<a target="_blank" href="http://www.huddletogether.com/projects/lightbox2/">http://www.huddletogether.com/projects/lightbox2/</a>  <br>
+You need to create a folder "lighbox" in the root of the gallery... i.e. alongside this readme file.  <br>
+Then extract the contents of the downloaded zip file to that "lightbox" folder.<br>
+  <br>
+Lightbox2 is licensed under a Creative Commons Attribution-NonCommercial 2.5 License.  <br>
+  <br>
+Lightbox is a simple, unobtrusive script used to overlay images on the current page. It's a snap to setup and works on all modern browsers. <br>
+<br>
+<br>
+<br>
+Because this script is not included in the gallery package as default, you will need to modify the CSS found in the lighbox script yourself to suit your needs.
+<br>
+More importantly, to get the loading gif and close button visible... YOU WILL NEED TO EDIT THE JS FILE.<br>
+In the beginning of the configuration in the lightbox.js file you will see paths to the two images.<br>
+add "lightbox/" to the beginning of the paths... and you will see the images displayed.<br> 
+<br>
+<br>
+The lightbox also shows comments etc under the images... so if you have config set to display imagename in the gallery... it will display it under the image in lightbox. Also, if ytou create a comments txt file named like "imagename.txt", the content will be displayed underneath the image.
+<br>
+<div align="center"><a href="javascript:toggleLayer('LIGHTBOX');">HIDE</a></div>
+</div>
+
+
+
+
+
+
+
+<p>
+<b>HIGHSLIDE JS</b><br>
+The latest gallery includes out of the box support for Highslide JS  <br>
+<a href="javascript:toggleLayer('HIGHSLIDE');">
+More info >>
+</a>
+</p>
+<div id="HIGHSLIDE" class="hidden_info">
+This can be turned on by setting $popupimage="4" in your theme config.  <br>
+  <br>
+To use this option... you must download the package from  <br>
+<a target="_blank" href="http://vikjavev.no/highslide/">http://vikjavev.no/highslide/</a>  <br>
+and copy it to the ROOT of the gallery... i.e. alongside this readme file.  <br>
+  <br>
+Highslide JS is licensed under a Creative Commons Attribution-NonCommercial 2.5 License.  <br>
+  <br>
+Highslide JS, formerly Vevstein Thumbnail Expander, is a piece of JavaScript that streamlines the use of thumbnail images on web pages. The library offers these features and advantages:  <br>
+  <br>
+* No plugins like Flash or Java required.  <br>
+* Popup blockers are no problem. The images expand within the active browser window.  <br>
+* Single click. After expanding the image, the user can scroll further down or leave the page without restoring the image.  <br>
+* The approach uses two separate images. No heavy full-size image packed into thumbnail display size! The full-size image is loaded in the background either on page load or when the user clicks the thumb. You specify this option in the script's settings.  <br>
+* Compatibility and safe fallback. If the user has disabled JavaScript or the JavaScript fails in any way, the browser redirects directly to the image itself. This fallback is able to cope with most exceptions and incompatibilities.  <br>
+
+<br>
+<br>
+<div align="center"><a href="javascript:toggleLayer('HIGHSLIDE');">HIDE</a></div>
+</div>
+
+
+
+
+
+
+
+<p>
+This version of the gallery now handles any kind of files... <b>Images, Video and other downloads</b>...<br>
+<a href="javascript:toggleLayer('file_handling');">
+More info >>
+</a>
+</p>
+<div id="file_handling" class="hidden_info">
+All images will be processed for thumbnails as usual... other files will be provided as a download.<br>
+Video files can be included in an embedded player. If you know what you are doing you can add your own video player code in "include/view_video.php"<br>
+You can configure file handling in "config/file_handling.php"<br>
+You can add icons for any filetypes you wish to have an icon for, by creating a jpg image and naming it with the file extension... i.e. for pdf files create pdf.jpg and put it in /icons/
+<br>
+<br>
+<div align="center"><a href="javascript:toggleLayer('file_handling');">HIDE</a></div>
+</div>
+
+
+
+
+
+<p>
+Gallery <b>Config</b> is now separated to two locations... the config folder and the theme folder... <br>
+<a href="javascript:toggleLayer('config_files');">
+More info >>
+</a>
+</p>
+<div id="config_files" class="hidden_info">
+config folder contains all sorts, and theme folder config has stuff related to the layout. <br>
+config from config folder is loaded first. <br>
+setting in theme folder can override those if same settings are reset there. <br>
+All config options can be reset by defining the options inside "galleryconfig.php" in each image folder to have different options in different folders. Just as before :)<br>
+<br>
+<br>
+* gallerysetup.php *<br>
+<br>
+This file contains all the main config for the gallery.<br>
+The setting here are "global" and they affect the whole gallery.<br>
+<br>
+<br>
+* galleryconfig.php *<br>
+<br>
+The setting in this file contain more specific information on how to handle images.<br>
+When set in this file in this location, the setting are "global" and affect the whole gallery. If you make a copy of this file inside a image folder (a specific image folder which you want to change) you can then override the global setting and have that part of the gallery behave differently.<br>
+<br>
+Some of the settings previously present in galleryconfig have been moved to the config file within the theme folder. the Setting contained in that file, are layout specific.<br>
+<br>
+The settings in that "config.php" file within the theme folder can be overridden for a specific folder also (as described above)... but... do not make a copy of that config.php.<br>
+You should copy the setting from that file and insert them into the "galleryconfig.php" file that you have copied in the directory.<br>
+<br>
+<br>
+<div align="center"><a href="javascript:toggleLayer('config_files');">HIDE</a></div>
+</div>
+
+
+
+
+<p>
+You can <b>Include</b> the gallery into your own site code... <br>
+<a href="javascript:toggleLayer('including');">
+More info... >>
+</a>
+</p>
+<div id="including" class="hidden_info">
+Example usage of the INCLUDE_MODE of the gallery is provided in the included "gallery_include_example.php" file.  <br>
+YOU MAY DELETE the gallery_include_example.php after you do not need it.  <br>
+<br>
+<br>
+<div align="center"><a href="javascript:toggleLayer('including');">HIDE</a></div>
+</div>
+
+
+
+
+<p>
+Adding <b>Desciptions</b> to images and albums <br>
+<a href="javascript:toggleLayer('Desciptions');">
+More info... >>
+</a>
+</p>
+<div id="Desciptions" class="hidden_info">
+
+<i>Images:</i><br>
+Description or comments file for each image can be added to the albums like this:  <br>
+[imagename].txt  <br>
+Then write your comments / description in the text file. The content will be displayed below the image in large view.  <br>
+Style of description can be changed in the theme css file just like most elements in the gallery...<br>
+See the section on multiple languages for adding different description.<br>
+  <br>
+  <br>
+<i>Folders:</i><br>
+Description or comments file for each folder can be added to the folders like this.  <br>
+Create a file for the default language inside the folder like this:  <br>
+"folder.txt"  <br>
+Then write your comments / description in the text file. The content will be displayed below the folder thumbnail or as a javascript "tooltip" div when you hover your mouse over the folder image (if that option is selected).  <br>
+Style of description can be changed in the theme css file just like most elements in the gallery...<br>
+See the section on multiple languages for adding different description.<br>
+  <br>
+  <br>
+
+
+<br>
+<br>
+<div align="center"><a href="javascript:toggleLayer('Desciptions');">HIDE</a></div>
+</div>
+
+
+
+<p>
+The Gallery now supports <b>MULTIPLE LANGUAGES</b>.   <br>
+<a href="javascript:toggleLayer('multi_lang');">
+More info >>
+</a>
+</p>
+<div id="multi_lang" class="hidden_info">
+
+------------------  <br>
+* MULTI LANGUAGE *  <br>
+  <br>
+The Gallery supports multiple languages.  <br>
+  <br>
+You can define new languages in the config/lang folder, by translating the content in "english.php" and renaming it to the name of the language.  <br>
+  <br>
+That name will then appear in the dropdown menu if you are using that.  <br>
+See example theme for dropdown... or use this line in your template.php of the theme you are using  <br>
+<?php echo language_select(); ?>  <br>
+  <br>
+This will then print out a dropdown selection box for available languages.  <br>
+  <br>
+The settings defined in these lang files obviously only affect the "labels" and links in the gallery.  <br>
+  <br>
+  <br>
+If you are using a language with non western characters (e.g. russian - cyrillic), I recommend you set the default language to english and do all the folder and image names in english. This way the URls will work nicely. Especially since IE seems to screw up with creating links out of these types of file names.<br>
+Then to get your language of choice working, follow instructions below, to set the folder and image names for display on page in your language.<br>
+Then set <i>$_SESSION['language']="russian";</i><br>
+below the config section in "gallery.php" where the language is set.  <br>
+  <br>
+  <br>
+------------------  <br>
+* FOLDER NAMES *  <br>
+  <br>
+You can have the folder names in multiple languages.  <br>
+To do this... keep the names of the folders in the default language defined in setup.  <br>
+Then, to add new names for folders in other languages:  <br>
+  <br>
+Create a txt file inside the folder and name it with the language,  <br>
+For example for finnish... i.e. "suomi"... I have a lang file suomi.php in the lang dir.  <br>
+To tie in with this language, I would create a file "suomi.txt" inside the folder I want to rename.  <br>
+Inside this txt file, type the name of the folder it is placed in, in the language you want.  <br>
+Then when the language is selected, the folder name is displayed with that language.  <br>
+This affects both the menu and the name below the folder.  <br>
+It does not affect the URL.  <br>
+  <br>
+  <br>
+------------------  <br>
+* IMAGE NAMES *  <br>
+  <br>
+You can have the image names in multiple languages.  <br>
+To do this... keep the names of the images in the default language defined in setup.  <br>
+Then, to add new names for images in other languages:  <br>
+  <br>
+Create a txt file inside the folder and name it like this:  <br>
+[imagename]_name_[language].txt  <br>
+For example for finnish... i.e. "suomi"... and a image called "my_photo.jpg" I would create a text file called "my_photo_name_suomi.txt"  <br>
+Inside this txt file, type the name of the image in the language you want.  <br>
+Then when the language is selected, the image name is displayed with that language.  <br>
+This will only affect the name below the image (if you have the option to display it turned on).  <br>
+It does not affect the URL.  <br>
+  <br>
+  <br>
+------------------  <br>
+* DESCRIPTIONS *  <br>
+  <br>
+<i>Images:</i><br>
+Description or comments file for each image can be done in several languages also.  <br>
+Create your normal comments file for the default language like this:  <br>
+[imagename].txt  <br>
+To create additional comments in other languages:  <br>
+[imagename]_[language].txt  <br>
+  <br>
+e.g. from the example used above:  <br>
+english ->    my_photo.txt  <br>
+finnish ->    my_photo_suomi.txt  <br>
+  <br>
+  <br>
+<i>Folders:</i><br>
+Description or comments file for each folder can be done in several languages also.  <br>
+Create your normal comments file for the default language like this:  <br>
+"folder.txt"  <br>
+To create additional comments in other languages:  <br>
+folder_[language].txt  <br>
+  <br>
+e.g. for folder "Photos" put these files inside:  <br>
+english ->    folder.txt  <br>
+finnish ->    folder_suomi.txt  <br>
+  <br>
+  <br>
+
+------------------  <br>
+* INCLUDING IN YOUR MULTI LANG SITE*  <br>
+  <br>
+To use this in your existing site, where you already have language selection for the whole site...  <br>
+Include the site normally... according to the instructions elsewhere.  <br>
+  <br>
+To get the gallery language to work with your language selection... do the following:  <br>
+  <br>
+assign your languge selection from your site to a variable called:  <br>
+$_SESSION['lang']  <br>
+  <br>
+you must use the same way to name the language in your site and the gallery... so it will recognise the language file wanted and so on... obviously :)  <br>
+
+  <br>
+  <br>
+<div align="center"><a href="javascript:toggleLayer('multi_lang');">HIDE</a></div>
+</div>
+
+
+
+
+
+
+
+
+<p>
+The Gallery has a <b>slideshow</b> option now. <br>
+<a href="javascript:toggleLayer('slideshow');">
+More info... >>
+</a>
+</p>
+<div id="slideshow" class="hidden_info">
+The slideshow will work from any page (not root). You can set the option in setup to display or hide the link.<br>
+The slideshow can also be used in the <b>popup window</b>.<br>
+If you select popup option <b>5</b> the popup window will use (or generate) cached images in the size defined in config.<br>
+If you select popup option <b>6</b> the popup window will use original images. (when using this, make sure the original images are not too big to display on the screen)<br>
+<br>
+<br>
+<div align="center"><a href="javascript:toggleLayer('slideshow');">HIDE</a></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<p>
+About the <b>ICONS</b>:<br>
+The Gallery supports defining your own icons for each filetype you want to provide.<br>
+The images will still be shown as thumbnails... unless you select the the file_list_view.<br>
+<a href="javascript:toggleLayer('icons');">
+More info >>
+</a>
+</p>
+<div id="icons" class="hidden_info">
+
+when you add files other than images into the gallery...<br>
+these icons will be used instead of a thumbnail.<br>
+By default, when file type is not defined in the icons here... it will use the blank "default.gif"<br>
+<br>
+You can add any icons here to display a specific image for the filetype.<br>
+You must name the file according to the file extension.<br>
+for example... avi.gif  mpg.gif  mov.gif  doc.gif  zip.gif<br>
+<br>
+<br>
+If you are creating a new theme, you can override any of the default icons by creating a folder "icons" inside the theme folder... e.g. have a look at my grey and dark themes. Works for both folder image and any file icon.<br>
+However, if you dont have an icon for a filetype in your "themename/icon" but it is found in "DEFAULT_ICONS" then that is used.<br>
+<br>
+The styles for the deafult themes have been condifgured to the icons size 64 x 64 and thumbnail size 140 x 105<br>
+If you want to use different size icons, you will need to edit the CSS styles to align them properly.<br>
+<br>
+The folder.gif folder icon image has to always have the same dimesnsions as the thumbnails.<br>
+<br>
+You can set the folder icon individually for each folder... by dropping a another "folder.gif" inside that folder.<br>
+<br>
+<br>
+---------------------------------------<br>
+<br>
+The default icon set here is by Kearone<br>
+<br>
+You can download the rest from:<br>
+<a target="_blank" href="http://www.deviantart.com/deviation/4846702/">http://www.deviantart.com/deviation/4846702/</a><br>
+<br>
+If you wish to add more icons to the set here... I recommend resizing to 64x64...<br>
+and convert to transparent GIF as the PNG support in IE is a bit dodgy to say the least.<br>
+<br>
+---------------------------------------<br>
+<br>
+<div align="center"><a href="javascript:toggleLayer('icons');">HIDE</a></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+This version now includes option to use <b>mod_rewrite</b>. <br>
+<a href="javascript:toggleLayer('mod_rewrite');">
+More info >>
+</a>
+</p>
+<div id="mod_rewrite" class="hidden_info">
+To get this working you will need to turn it on in the setup - and copy the htaccess file from the admin/htaccess folder into the root - or rename the "Copy of . htaccess" to just ".htaccess" in the root
+<br>
+<br>
+<div align="center"><a href="javascript:toggleLayer('mod_rewrite');">HIDE</a></div>
+</div>
+
+
+
+
+
+
+
+
+<p>
+Uploading Zips<br>
+<a href="javascript:toggleLayer('php_zip');">
+what you need to do to upload multiple images at once in zip files... >>
+</a>
+</p>
+<div id="php_zip" class="hidden_info">
+If the zip upload is not working, you most likely do not have the php_zip extension installed.<br>
+To correct this...<br>
+You must have access to you php.ini on your server!<br>
+<br>
+you will need to do a search in the file for "php_ini"<br>
+you will find it under extensions<br>
+then remove the semicolon from the beginning of the line.<br>
+restart the server... -> zips should work<br>
+
+<br>
+<br>
+<div align="center"><a href="javascript:toggleLayer('php_zip');">HIDE</a></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<p>
+UPGRADING? <br>
+<a href="javascript:toggleLayer('UPGRADING');">
+find out what you should do when upgrading... >>
+</a>
+</p>
+<div id="UPGRADING" class="hidden_info">
+You can copy all your image folders including the settings etc to this gallery version... they will work the same as they did before. Some new setting have been added... if they are not added manually to the individual config files - then default values will be used for those settings.  <br>
+Additionally, themes now include default config. If you override those settings in the folders, the layout may be affected.  <br>
+  <br>
+  <br>
+index.php will only calls the code from the gallery directory.  <br>
+This has been changed so that the structure is kept more clean.  <br>
+  <br>
+It has been deemed important to keep all the gallery files separate from the root  <br>
+for the sake of the include mode.  <br>
+So now, when you use include() in your site. You do not need to copy the files to your root.  <br>
+Simply drop in the gallery folder.  <br>
+  <br>
+The way the include mode is configured has changed  <br>
+Example usage of this is provided in the included "gallery_include_example.php" file.  <br>
+YOU MAY DELETE the gallery_include_example.php after you do not need it.  <br>
+
+<br>
+<br>
+<div align="center"><a href="javascript:toggleLayer('UPGRADING');">HIDE</a></div>
+</div>
+
+
+<p>
+Please see changelog for other new options / changes.
+</p>
+
+<p>
+Any problems? -> <a target="_blank" href="http://foldergallery.jv2.net/forum/">Please visit the FORUM</a>
+</p>
+
+<br><br>
+
+
+<p>
+I would like to thank <b>Rich</b> for testing approx. 10 beta versions of version 3<br>
+However, neither of us take any responsibility for any bugs left in the script... :)<br>
+If you find one, don't cry... just <a target="_blank" href="http://foldergallery.jv2.net/forum/">report it in the forum</a>
+and I'll see what I can do about it...
+</p>
+
+
+
+<br><br>
+
+
+<p>
+If you like my gallery, find it useful.... and want to reward my efforts...<br>
+or if you are, for example, using my gallery for <a target="_blank" href="http://foldergallery.jv2.net/Commercial_Licence/">commercial purposes</a>, and are feeling guilty making money...<br>
+then please consider <a target="_blank" href="http://foldergallery.jv2.net/Donate/">donating</a> something towards my server and other running costs...
+<br><br>
+Thanks!!
+</p>
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+   <br>
+<a href="javascript:toggleLayer('id');">
+
+</a>
+</p>
+<div id="id" class="hidden_info">
+
+<br>
+<br>
+<div align="center"><a href="javascript:toggleLayer('id');"></a></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
